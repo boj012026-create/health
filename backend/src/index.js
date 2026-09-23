@@ -1,4 +1,4 @@
-import express from 'express';
+import express, { json } from 'express';
 import { foodRouterV1 } from './router/foodV1.router.js';
 
 export const app = express();
@@ -7,7 +7,7 @@ const PORT = 3000;
 const HOST = '0.0.0.0';
 
 // Plugins
-
+app.use(json());
 
 //Middlewares
 

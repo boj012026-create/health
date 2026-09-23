@@ -8,6 +8,8 @@ export const foodControllerV1 = {
      * @param {import("express").Response) res Response
      */
     "/": (req, res) => {
-        res.send("hello world");
+       //res.send("Hello");
+        //res.json({ message: "world" });
+        res.json(foodData);
     }
 }

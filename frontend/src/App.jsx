@@ -1,6 +1,7 @@
 import "./App.css";
 import healthApi from "./api/healthApi";
 
+function App() {
 healthApi.food()
 
   return (

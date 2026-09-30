@@ -7,11 +7,15 @@ function App() {
     <>
     <h2>{loading ? "loading": ""}</h2>
     <h2>Hellor i world</h2>
-    {data.map(food => (
+    {data.map(food => {
+      return (
+      Object.keys(food).map( foodFact => (
           <>
-          <p>{food.Matvare}</p>
+          <p>{food[foodFact]}</p>
           </>
+      )
         ))
+      })
     }
     </>
   )

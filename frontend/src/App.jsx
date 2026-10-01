@@ -6,11 +6,12 @@ import Table from "./components/Table.jsx";
 function App() {
   const {data, loading, error, refresh} = useApi(healthApi.food, {});
 
+  if(loading) return <h2>Loading... </h2>
+  if(error) return <h2>Error: {error.message}</h2>
   return (
     <>
-    <h2>{loading ? "loading": ""}</h2>
     <h2>Hellor i world</h2>
-    <Table data={data} refresh={refresh}/>
+        <Table data={data} refresh={refresh}/>
     </>
   )
 }

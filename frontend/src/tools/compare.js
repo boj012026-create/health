@@ -12,6 +12,6 @@
    *Parses a StringNumber with comma to float with period, like "1,5" to 1.5  
    */
   function parseCommaFloat(stringNum) {
-    if (typeof(numstring) === "number") return stringNum;
-    return parseFloat(stringNum.replace(",", "."));
+    if ( typeof(stringNum) === "number" ) return stringNum;
+    return parseFloat(stringNum.replace( "," ,   "." ));
   }

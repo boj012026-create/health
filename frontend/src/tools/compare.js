@@ -1,6 +1,6 @@
-  function compare(a, b) {
-    if ( isText()) return a.localeCompare(b);
-    else return parseCommaFloat(a) - parseCommaFloat(b);
+  export default function compare(a, b) {
+    if ( isText(a) ) return a.localeCompare(b);
+    else return parseCommaFloat(b) - parseCommaFloat(a);
   }
   /*
    * returns false if @a contain numbers 

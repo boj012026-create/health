@@ -1,5 +1,5 @@
 import express, { json } from 'express';
-//import cors from "cors";
+import cors from "cors";
 import { foodRouterV1 } from './router/foodV1.router.js';
 
 export const app = express();
@@ -11,7 +11,7 @@ const HOST = '0.0.0.0';
 app.use(json());
 
 //Middlewares
-//app.use(cors());
+app.use(cors());
 
 //Endpoints
 app.use("/api/v1/food", foodRouterV1);

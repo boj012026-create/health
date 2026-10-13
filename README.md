@@ -1,23 +1,6 @@
 # NutrientValue (NæringsPris)
+Spreadsheet of food that shows density per currency spent.
 
-**NutrientValue** is a fullstack app calculating nutritional density per currency spent. Built with a decoupled React frontend and Express backend, it features secure password encryption, session-based authentication, and a dedicated database integration allowing users to save their favorite budget-friendly food items.
-
-## 📁 Project Structure
-
-This project is built as a decoupled monorepo:
-
-```text
-naeringspris/
-├── backend/                  # Node.js & Express API
-│   ├── data/matdata.json     # Controlled local dataset
-│   ├── models/               # Database schemas
-│   ├── routes/               # API endpoints (auth & food data)
-│   └── server.js             # Express server entry point
-├── frontend/                 # React frontend (Vite)
-│   ├── src/                  # Components, context, and views
-│   └── index.html
-├── LICENSE                   # MIT License
-└── README.md                 # Project documentation
 ```
 
 ## 🛠️ Tech Stack & Architecture
@@ -30,12 +13,12 @@ naeringspris/
 ## 🚀 Development Roadmap
 
 ### Phase 1: Backend Foundations & Logic (No Database)
-*   [ ] Set up the Express server with CORS and environmental variables.
-*   [ ] Create a controlled `matdata.json` dataset with local nutritional values.
-*   [ ] Implement the `/api/matvarer` endpoint to process calculations on the server side.
+*   [x] Set up the Express server with CORS and environmental variables.
+*   [x] Create a controlled `matdata.json` dataset with local nutritional values.
+*   [x] Implement the `/api/matvarer` endpoint to process calculations on the server side.
 
 ### Phase 2: Frontend & Universal Design
-*   [ ] Connect React to the local Express proxy via `fetch`.
+*   [x] Connect React to the local Express proxy via `fetch`.
 *   [ ] Build a clean, responsive dashboard using semantic HTML.
 *   [ ] Perform accessibility (WCAG) checks for keyboard navigability and color contrast.
 
